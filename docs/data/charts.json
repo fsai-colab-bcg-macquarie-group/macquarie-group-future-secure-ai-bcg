@@ -1,0 +1,2722 @@
+{
+  "as_of": "2026-09-10",
+  "method": "LinkedIn people-search topline (name + headline only). No logged-in profile scrape. Mutual connections discarded. Company-page stats from public search snippets. Leadership prior firms from the public leadership page bios.",
+  "linkedin_company_page": {
+    "source": "Public search index of linkedin.com/company/future-secure-ai (Sep 2026)",
+    "employees": 282,
+    "yoy_percent": 181.9,
+    "yoy_people": 211,
+    "monthly_growth_percent": 3.8,
+    "headquarters": "Austin, Texas, United States",
+    "countries": [
+      "Australia",
+      "Brazil",
+      "United States",
+      "Canada",
+      "Vietnam"
+    ],
+    "industry": "Software Development",
+    "type": "Privately Held",
+    "size_band": "201-500"
+  },
+  "ratios": {
+    "named": 129,
+    "mgmt_titles": 32,
+    "ic_titles": 63,
+    "mgmt_share_pct": 24.8,
+    "slogan_no_stack": 14,
+    "named_tools": 6,
+    "consulting_no_stack": 4,
+    "phd": 4,
+    "no_location_word": 125,
+    "vietnam_words": 0,
+    "clients_named": 5,
+    "sectors_claimed": 12,
+    "independent_trial_customers": 1,
+    "swe_titles": 7,
+    "platform_titles": 4,
+    "ai_titles": 40,
+    "director_titles": 20,
+    "csuite_titles": 3,
+    "qa_titles": 8,
+    "delivery_titles": 13,
+    "generic": 83,
+    "generic_pct": 64.3,
+    "headline_names_a_prior": 14,
+    "leadership_page_n": 37,
+    "leadership_page_swe": 0,
+    "leadership_page_ai": 2,
+    "leadership_page_directors": 17,
+    "leadership_page_csuite": 9,
+    "leadership_consulting_or_buyer_bank": 20
+  },
+  "search_sample": {
+    "cards": 400,
+    "buckets": {
+      "excluded_other_employer": 9,
+      "search_adjacent": 257,
+      "named_fsai": 108,
+      "leadership_page": 21,
+      "excluded_noise": 5
+    },
+    "named_or_leadership": 129,
+    "family_named": {
+      "AI / ML / data": 40,
+      "Unclassified / other": 16,
+      "Talent / people": 6,
+      "Delivery / product / BA": 13,
+      "Directors / executives": 20,
+      "Software engineering": 7,
+      "Operations": 4,
+      "Legal / risk / finance": 6,
+      "C-suite / founders": 3,
+      "Quality engineering": 8,
+      "Design": 2,
+      "Platform / SRE / cloud": 4
+    },
+    "seniority_named": {
+      "Staff / principal": 11,
+      "Individual contributor": 38,
+      "Director / VP": 13,
+      "Exec / head": 10,
+      "Senior": 24,
+      "C-suite": 9,
+      "Lead / manager": 23,
+      "Intern": 1
+    },
+    "location_named": {
+      "No location word": 125,
+      "APAC word in title": 2,
+      "Portuguese (LatAm) title": 1,
+      "Other region word": 1
+    },
+    "competency_named": {
+      "Generic / unspecified": 83,
+      "Slogan title, no stack": 14,
+      "Named tools / models": 6,
+      "Hiring / people": 5,
+      "Consulting pedigree, no stack": 4,
+      "Delivery / BA / agile": 8,
+      "QA / test": 8,
+      "Buyer-bank pedigree": 1
+    },
+    "competency_mgmt": {
+      "Generic / unspecified": 23,
+      "Hiring / people": 2,
+      "Consulting pedigree, no stack": 4,
+      "Slogan title, no stack": 2,
+      "Named tools / models": 1
+    }
+  },
+  "prior_by_function_headlines": {
+    "rows": [
+      "C-suite / founders",
+      "Directors / executives",
+      "AI / ML / data",
+      "Software engineering",
+      "Platform / SRE / cloud",
+      "Quality engineering",
+      "Delivery / product / BA",
+      "Talent / people",
+      "Legal / risk / finance",
+      "Operations",
+      "Design",
+      "Unclassified / other"
+    ],
+    "columns": [
+      "McKinsey",
+      "BCG",
+      "Deloitte",
+      "Macquarie",
+      "Cohere",
+      "Apple",
+      "Netflix",
+      "Google",
+      "AWS",
+      "Not stated in headline",
+      "PayPal",
+      "A&O Shearman"
+    ],
+    "series": {
+      "McKinsey": [
+        0,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "BCG": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Deloitte": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Macquarie": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "Cohere": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Apple": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Netflix": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Google": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "AWS": [
+        0,
+        1,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Not stated in headline": [
+        2,
+        15,
+        36,
+        7,
+        4,
+        8,
+        13,
+        6,
+        5,
+        4,
+        1,
+        14
+      ],
+      "PayPal": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "A&O Shearman": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "prior_by_function_named_priors": {
+    "rows": [
+      "C-suite / founders",
+      "Directors / executives",
+      "AI / ML / data",
+      "Software engineering",
+      "Platform / SRE / cloud",
+      "Quality engineering",
+      "Delivery / product / BA",
+      "Talent / people",
+      "Legal / risk / finance",
+      "Operations",
+      "Design",
+      "Unclassified / other"
+    ],
+    "columns": [
+      "McKinsey",
+      "BCG",
+      "Deloitte",
+      "Macquarie",
+      "Cohere",
+      "Apple",
+      "Netflix",
+      "Google",
+      "AWS",
+      "PayPal",
+      "A&O Shearman"
+    ],
+    "series": {
+      "McKinsey": [
+        0,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "BCG": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Deloitte": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Macquarie": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "Cohere": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Apple": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Netflix": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Google": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "AWS": [
+        0,
+        1,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "PayPal": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "A&O Shearman": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "prior_by_function_leadership_page": {
+    "rows": [
+      "C-suite / founders",
+      "Directors / executives",
+      "AI / ML / data",
+      "Software engineering",
+      "Platform / SRE / cloud",
+      "Quality engineering",
+      "Delivery / product / BA",
+      "Talent / people",
+      "Legal / risk / finance",
+      "Operations",
+      "Design",
+      "Unclassified / other"
+    ],
+    "columns": [
+      "McKinsey",
+      "BCG",
+      "Deloitte",
+      "Macquarie",
+      "Cohere",
+      "Netflix",
+      "AWS",
+      "AMP",
+      "A&O Shearman",
+      "Other"
+    ],
+    "series": {
+      "McKinsey": [
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "BCG": [
+        1,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Deloitte": [
+        0,
+        5,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Macquarie": [
+        1,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      "Cohere": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Netflix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "AWS": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "AMP": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "A&O Shearman": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "Other": [
+        2,
+        2,
+        2,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ]
+    }
+  },
+  "competency_by_function": {
+    "rows": [
+      "C-suite / founders",
+      "Directors / executives",
+      "AI / ML / data",
+      "Software engineering",
+      "Platform / SRE / cloud",
+      "Quality engineering",
+      "Delivery / product / BA",
+      "Talent / people",
+      "Legal / risk / finance",
+      "Operations",
+      "Design",
+      "Unclassified / other"
+    ],
+    "columns": [
+      "Generic / unspecified",
+      "Slogan title, no stack",
+      "Consulting pedigree, no stack",
+      "Buyer-bank pedigree",
+      "Delivery / BA / agile",
+      "QA / test",
+      "Hiring / people",
+      "Named tools / models"
+    ],
+    "series": {
+      "Generic / unspecified": [
+        3,
+        17,
+        24,
+        7,
+        4,
+        0,
+        2,
+        1,
+        5,
+        4,
+        1,
+        15
+      ],
+      "Slogan title, no stack": [
+        0,
+        0,
+        11,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Consulting pedigree, no stack": [
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "Buyer-bank pedigree": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "Delivery / BA / agile": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        8,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "QA / test": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        8,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Hiring / people": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Named tools / models": [
+        0,
+        0,
+        5,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "prior_by_competency": {
+    "rows": [
+      "Generic / unspecified",
+      "Slogan title, no stack",
+      "Consulting pedigree, no stack",
+      "Buyer-bank pedigree",
+      "Delivery / BA / agile",
+      "QA / test",
+      "Hiring / people",
+      "Named tools / models"
+    ],
+    "columns": [
+      "McKinsey",
+      "BCG",
+      "Deloitte",
+      "Macquarie",
+      "Cohere",
+      "Apple",
+      "Netflix",
+      "Google",
+      "AWS",
+      "PayPal",
+      "A&O Shearman"
+    ],
+    "series": {
+      "McKinsey": [
+        0,
+        1,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "BCG": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Deloitte": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Macquarie": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Cohere": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Apple": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Netflix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Google": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "AWS": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "PayPal": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "A&O Shearman": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "function_named": {
+    "C-suite / founders": 3,
+    "Directors / executives": 20,
+    "AI / ML / data": 40,
+    "Software engineering": 7,
+    "Platform / SRE / cloud": 4,
+    "Quality engineering": 8,
+    "Delivery / product / BA": 13,
+    "Talent / people": 6,
+    "Legal / risk / finance": 6,
+    "Operations": 4,
+    "Design": 2,
+    "Unclassified / other": 16
+  },
+  "leadership_prior_employers": {
+    "McKinsey": 3,
+    "Macquarie": 6,
+    "Other": 10,
+    "Cohere": 2,
+    "BCG": 5,
+    "Netflix": 1,
+    "A&O Shearman": 1,
+    "AMP": 2,
+    "Deloitte": 6,
+    "AWS": 1
+  },
+  "leadership_bench": [
+    {
+      "name": "Mehrdad Baghai",
+      "seat": "C-suite / founders",
+      "prior": "McKinsey"
+    },
+    {
+      "name": "Michael Hunter",
+      "seat": "C-suite / founders",
+      "prior": "Macquarie"
+    },
+    {
+      "name": "Todd Hewlin",
+      "seat": "C-suite / founders",
+      "prior": "McKinsey"
+    },
+    {
+      "name": "Tiernan O\u2019Rourke",
+      "seat": "C-suite / founders",
+      "prior": "Other"
+    },
+    {
+      "name": "Brendan McKeegan",
+      "seat": "C-suite / founders",
+      "prior": "Other"
+    },
+    {
+      "name": "Belkis Vasquez-McCall",
+      "seat": "C-suite / founders",
+      "prior": "McKinsey"
+    },
+    {
+      "name": "Shaun Hillin",
+      "seat": "C-suite / founders",
+      "prior": "Cohere"
+    },
+    {
+      "name": "Aliya Valiyff",
+      "seat": "C-suite / founders",
+      "prior": "BCG"
+    },
+    {
+      "name": "TJ Mead",
+      "seat": "C-suite / founders",
+      "prior": "Netflix"
+    },
+    {
+      "name": "Andrew Trahair",
+      "seat": "Legal / risk / finance",
+      "prior": "A&O Shearman"
+    },
+    {
+      "name": "Angela Sloan",
+      "seat": "Legal / risk / finance",
+      "prior": "Macquarie"
+    },
+    {
+      "name": "Ali Rod Khadem",
+      "seat": "Legal / risk / finance",
+      "prior": "Macquarie"
+    },
+    {
+      "name": "Jennifer Lacoon",
+      "seat": "Talent / people",
+      "prior": "Other"
+    },
+    {
+      "name": "Goy Phumtim",
+      "seat": "Operations",
+      "prior": "Other"
+    },
+    {
+      "name": "Shazia Juma Ross",
+      "seat": "Directors / executives",
+      "prior": "Macquarie"
+    },
+    {
+      "name": "Jim Lambright",
+      "seat": "Directors / executives",
+      "prior": "Other"
+    },
+    {
+      "name": "Patrick Forth",
+      "seat": "Directors / executives",
+      "prior": "BCG"
+    },
+    {
+      "name": "Paul Sainsbury",
+      "seat": "Directors / executives",
+      "prior": "AMP"
+    },
+    {
+      "name": "Caleb Sawade",
+      "seat": "Delivery / product / BA",
+      "prior": "Deloitte"
+    },
+    {
+      "name": "Cody Collins",
+      "seat": "Platform / SRE / cloud",
+      "prior": "AWS"
+    },
+    {
+      "name": "Jason Bender",
+      "seat": "Directors / executives",
+      "prior": "Deloitte"
+    },
+    {
+      "name": "David Kari",
+      "seat": "Platform / SRE / cloud",
+      "prior": "Other"
+    },
+    {
+      "name": "Ricardo Lamas",
+      "seat": "AI / ML / data",
+      "prior": "Other"
+    },
+    {
+      "name": "Joshua Kim",
+      "seat": "AI / ML / data",
+      "prior": "Other"
+    },
+    {
+      "name": "Mike Karim",
+      "seat": "Legal / risk / finance",
+      "prior": "Other"
+    },
+    {
+      "name": "Jeremy Drumm",
+      "seat": "Directors / executives",
+      "prior": "Deloitte"
+    },
+    {
+      "name": "Sarah Ryerson",
+      "seat": "Directors / executives",
+      "prior": "Cohere"
+    },
+    {
+      "name": "Naz Saleem",
+      "seat": "Directors / executives",
+      "prior": "Other"
+    },
+    {
+      "name": "Zane Kung-Faust",
+      "seat": "Directors / executives",
+      "prior": "Deloitte"
+    },
+    {
+      "name": "Rachel Swift",
+      "seat": "Directors / executives",
+      "prior": "BCG"
+    },
+    {
+      "name": "Kellie Nuttall",
+      "seat": "Directors / executives",
+      "prior": "Deloitte"
+    },
+    {
+      "name": "Ariane Garside",
+      "seat": "Directors / executives",
+      "prior": "BCG"
+    },
+    {
+      "name": "Steve Carlisle",
+      "seat": "Directors / executives",
+      "prior": "Deloitte"
+    },
+    {
+      "name": "Oliver Lewis",
+      "seat": "Directors / executives",
+      "prior": "Macquarie"
+    },
+    {
+      "name": "Artur Kaluza",
+      "seat": "Directors / executives",
+      "prior": "Macquarie"
+    },
+    {
+      "name": "Ollie Sloman",
+      "seat": "Directors / executives",
+      "prior": "BCG"
+    },
+    {
+      "name": "Craig Meller",
+      "seat": "Directors / executives",
+      "prior": "AMP"
+    }
+  ],
+  "headcount_stories": {
+    "labels": [
+      "Hewlin: ~40, start of 2025",
+      "LinkedIn: 282 \u2212 211 YoY",
+      "LinkedIn: 282 \u00f7 (1 + 181.9%)",
+      "LinkedIn widget now",
+      "Hewlin: 300+ in 2025"
+    ],
+    "values": [
+      40,
+      71,
+      100,
+      282,
+      300
+    ]
+  },
+  "capacity_vs_overlay": {
+    "labels": [
+      "Software engineering titles",
+      "Platform / SRE titles",
+      "Named tools / models in title",
+      "QA titles",
+      "Delivery / BA titles",
+      "Director / exec titles",
+      "C-suite titles",
+      "Slogan-only titles"
+    ],
+    "values": [
+      7,
+      4,
+      6,
+      8,
+      13,
+      20,
+      3,
+      14
+    ]
+  },
+  "geo_claimed_vs_titles": {
+    "labels": [
+      "Australia",
+      "Brazil",
+      "United States",
+      "Canada",
+      "Vietnam"
+    ],
+    "claimed_on_widget": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "title_words": [
+      2,
+      1,
+      0,
+      0,
+      0
+    ]
+  },
+  "journey_pages": [
+    {
+      "path": "/",
+      "title": "Home",
+      "bytes": 190897
+    },
+    {
+      "path": "/ai-co-workers",
+      "title": "AI Co-Workers",
+      "bytes": 94502
+    },
+    {
+      "path": "/the-red-zone",
+      "title": "The Red Zone",
+      "bytes": 86983
+    },
+    {
+      "path": "/sectors",
+      "title": "Sectors",
+      "bytes": 221618
+    },
+    {
+      "path": "/customers",
+      "title": "Customers",
+      "bytes": 112480
+    },
+    {
+      "path": "/technology",
+      "title": "Technology",
+      "bytes": 88721
+    },
+    {
+      "path": "/leadership",
+      "title": "Leadership",
+      "bytes": 131524
+    },
+    {
+      "path": "/careers",
+      "title": "Careers",
+      "bytes": 177615
+    },
+    {
+      "path": "/privacy",
+      "title": "Privacy",
+      "bytes": 68803
+    },
+    {
+      "path": "/404",
+      "title": "404 template",
+      "bytes": 23417
+    }
+  ],
+  "directory": [
+    {
+      "name": "Pieter Barnard, PhD",
+      "headline": "Staff AI Engineer (Data Science) at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "AI / ML / data",
+      "seniority": "Staff / principal",
+      "phd": true,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "William Glenn",
+      "headline": "Building AI Co-Workers @ Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "AI / ML / data",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Slogan title, no stack"
+    },
+    {
+      "name": "Shahdad Ghassemzadeh",
+      "headline": "Staff AI Engineer at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "AI / ML / data",
+      "seniority": "Staff / principal",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Sara Keretna",
+      "headline": "Staff AI Engineer @ Future Secure AI | PhD in NLP",
+      "bucket": "named_fsai",
+      "family": "AI / ML / data",
+      "seniority": "Staff / principal",
+      "phd": true,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Named tools / models"
+    },
+    {
+      "name": "Joshua Kim",
+      "headline": "PhD, Natural Language Processing || Exec Director, Data Science (FSAI Labs) || GenAI",
+      "bucket": "named_fsai",
+      "family": "AI / ML / data",
+      "seniority": "Director / VP",
+      "phd": true,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Fakhera Mansuri",
+      "headline": "Artificial Intelligence Engineer at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Unclassified / other",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Malhar Patel",
+      "headline": "Building AI agents | DS at FSAI",
+      "bucket": "named_fsai",
+      "family": "Unclassified / other",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Jinsiu Du",
+      "headline": "Head of Talent APAC at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Talent / people",
+      "seniority": "Exec / head",
+      "phd": false,
+      "priors": [],
+      "location": "APAC word in title",
+      "competency": "Hiring / people"
+    },
+    {
+      "name": "Philip Carusi",
+      "headline": "ai engineer @ FSAI & BCom at university of sydney",
+      "bucket": "named_fsai",
+      "family": "AI / ML / data",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [],
+      "location": "APAC word in title",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Mahbubur Rahman",
+      "headline": "Senior AI Engineer @ Future Secure AI | Agentic AI, n8n Node.js, React.js, Scrum,",
+      "bucket": "named_fsai",
+      "family": "Delivery / product / BA",
+      "seniority": "Senior",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Named tools / models"
+    },
+    {
+      "name": "Jennifer Lacoon",
+      "headline": "CHRO | CPO | Executive Coach | Mentor | People Strategy",
+      "bucket": "leadership_page",
+      "family": "Talent / people",
+      "seniority": "C-suite",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Hiring / people"
+    },
+    {
+      "name": "Ollie Sloman",
+      "headline": "Executive Director - Growth at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Directors / executives",
+      "seniority": "Exec / head",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Jakeer M.",
+      "headline": "AI Build Lead | Product Owner | Agentic AI | Building AI Coworkers at @ Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Delivery / product / BA",
+      "seniority": "Lead / manager",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Slogan title, no stack"
+    },
+    {
+      "name": "Curtis Barnes",
+      "headline": "Software Engineer @ Future Secure AI | Full-stack Developer",
+      "bucket": "named_fsai",
+      "family": "Software engineering",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Nisha Kumar",
+      "headline": "Senior Talent Partner at Future Secure AI | Building AI Teams",
+      "bucket": "named_fsai",
+      "family": "Talent / people",
+      "seniority": "Senior",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Hiring / people"
+    },
+    {
+      "name": "Caleb Sawade",
+      "headline": "Executive | AI | Technology",
+      "bucket": "leadership_page",
+      "family": "Directors / executives",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Rishy Ahluwalia",
+      "headline": "Principal AI Engineer @ Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "AI / ML / data",
+      "seniority": "Staff / principal",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Marillia Vasconcelos",
+      "headline": "Senior Software Engineer | Tech Lead @ Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Software engineering",
+      "seniority": "Lead / manager",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Luke McDermott",
+      "headline": "Senior AI Engineer at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "AI / ML / data",
+      "seniority": "Senior",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "David Smales",
+      "headline": "Director at Future Secure AI (ex-McKinsey)",
+      "bucket": "named_fsai",
+      "family": "Directors / executives",
+      "seniority": "Director / VP",
+      "phd": false,
+      "priors": [
+        "McKinsey"
+      ],
+      "location": "No location word",
+      "competency": "Consulting pedigree, no stack"
+    },
+    {
+      "name": "Brendan McKeegan",
+      "headline": "Transforming Enterprises with AI Co-Workers",
+      "bucket": "leadership_page",
+      "family": "AI / ML / data",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Slogan title, no stack"
+    },
+    {
+      "name": "Kendall Wu",
+      "headline": "Director @ Future Secure AI | Value Creation & Applied AI | Industrials",
+      "bucket": "named_fsai",
+      "family": "Directors / executives",
+      "seniority": "Director / VP",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Alex Hunt",
+      "headline": "Operations | FSAI",
+      "bucket": "named_fsai",
+      "family": "Operations",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Jeremy Drumm",
+      "headline": "Group Executive | Tech & Innovation | AI and the Future Workforce",
+      "bucket": "leadership_page",
+      "family": "Directors / executives",
+      "seniority": "Exec / head",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "David Brown",
+      "headline": "Senior AI Engineer @ FSAI | Founder of BestExchangeRates.com | AI, fintech & real-time systems",
+      "bucket": "named_fsai",
+      "family": "AI / ML / data",
+      "seniority": "Senior",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Dr Kellie Nuttall",
+      "headline": "AI Executive - C Suite and Board Advisor - Building AI Co-Workers",
+      "bucket": "leadership_page",
+      "family": "AI / ML / data",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Slogan title, no stack"
+    },
+    {
+      "name": "Jake Hedge",
+      "headline": "Building AI Co-Workers @ Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "AI / ML / data",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Slogan title, no stack"
+    },
+    {
+      "name": "Dr Rachel Swift",
+      "headline": "Healthcare Executive & AI Leader | Building AI Co-Workers for Health Systems | NED | Ex-BCG",
+      "bucket": "leadership_page",
+      "family": "AI / ML / data",
+      "seniority": "Lead / manager",
+      "phd": false,
+      "priors": [
+        "BCG"
+      ],
+      "location": "No location word",
+      "competency": "Slogan title, no stack"
+    },
+    {
+      "name": "Patrick Forth",
+      "headline": "Executive and Board member with deep global AI and Technology expertise",
+      "bucket": "leadership_page",
+      "family": "Directors / executives",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Andy B.",
+      "headline": "TA @ Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Unclassified / other",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Zane Kung-Faust",
+      "headline": "AI x Private Equity | Portfolio Value Creation | C-Suite & Board Advisor",
+      "bucket": "leadership_page",
+      "family": "Unclassified / other",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Tharaka Perera",
+      "headline": "Senior Data Scientist at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "AI / ML / data",
+      "seniority": "Senior",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Boston Williams",
+      "headline": "Associate Engagement Lead at FSAI",
+      "bucket": "named_fsai",
+      "family": "Delivery / product / BA",
+      "seniority": "Lead / manager",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Delivery / BA / agile"
+    },
+    {
+      "name": "Imran Alam",
+      "headline": "Senior AI Engineer (Software) at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "AI / ML / data",
+      "seniority": "Senior",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Artur Kaluza",
+      "headline": "Technology | Innovation | AI",
+      "bucket": "leadership_page",
+      "family": "Unclassified / other",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Houru Wu",
+      "headline": "Director @ Future Secure AI | CFA | CPA",
+      "bucket": "named_fsai",
+      "family": "Legal / risk / finance",
+      "seniority": "Director / VP",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Diogo Fraga da Silveira",
+      "headline": "Senior AI Engineer at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "AI / ML / data",
+      "seniority": "Senior",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Ricardo Lamas",
+      "headline": "Chief Innovation Officer at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "C-suite / founders",
+      "seniority": "C-suite",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Belkis Vasquez-McCall",
+      "headline": "Chief Delivery Officer | Embedding AI Co-Workers Across the Enterprise",
+      "bucket": "leadership_page",
+      "family": "AI / ML / data",
+      "seniority": "C-suite",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Slogan title, no stack"
+    },
+    {
+      "name": "Jayashree Shetty",
+      "headline": "Sr. Quality Assurance Engineer - Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Quality engineering",
+      "seniority": "Senior",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "QA / test"
+    },
+    {
+      "name": "Joyce Aguirre-Gonzaga",
+      "headline": "Senior Technical Business Analyst at FutureSecure AI",
+      "bucket": "named_fsai",
+      "family": "Delivery / product / BA",
+      "seniority": "Senior",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Delivery / BA / agile"
+    },
+    {
+      "name": "Jana Kreuziger (Roedel)",
+      "headline": "Building AI Co-Workers at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "AI / ML / data",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Slogan title, no stack"
+    },
+    {
+      "name": "David Kari",
+      "headline": "Director, Architecture & Engineering | Cloud & DevSecOps Leader | Building Scalable & Secure Platforms | Artificial Intelligence",
+      "bucket": "leadership_page",
+      "family": "Directors / executives",
+      "seniority": "Director / VP",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "John Hopkins",
+      "headline": "QA Lead at FSAI",
+      "bucket": "named_fsai",
+      "family": "Quality engineering",
+      "seniority": "Lead / manager",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "QA / test"
+    },
+    {
+      "name": "Oliver Lewis",
+      "headline": "Non Executive Director and Consultant",
+      "bucket": "leadership_page",
+      "family": "Directors / executives",
+      "seniority": "Exec / head",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Lutz Ackermann",
+      "headline": "Senior Director at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Directors / executives",
+      "seniority": "Exec / head",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Angela Sloan",
+      "headline": "Chief Risk & Compliance Officer at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Legal / risk / finance",
+      "seniority": "C-suite",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Paul Sainsbury",
+      "headline": "Business Transformation, M&A Integration and Separation, Business Advisory, Executive Coaching.",
+      "bucket": "leadership_page",
+      "family": "Directors / executives",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Milly Harvey",
+      "headline": "Associate Engagement Lead @ Future Secure AI | Team Building, Project Management",
+      "bucket": "named_fsai",
+      "family": "Delivery / product / BA",
+      "seniority": "Lead / manager",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Delivery / BA / agile"
+    },
+    {
+      "name": "Grace S.",
+      "headline": "FP&A Manager at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Legal / risk / finance",
+      "seniority": "Lead / manager",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Nathan Obermuller",
+      "headline": "Director - Social Impact & Education | Future Secure AI | ex-BCG",
+      "bucket": "named_fsai",
+      "family": "Directors / executives",
+      "seniority": "Director / VP",
+      "phd": false,
+      "priors": [
+        "BCG"
+      ],
+      "location": "No location word",
+      "competency": "Consulting pedigree, no stack"
+    },
+    {
+      "name": "Tina Belcastro",
+      "headline": "Building AI Co-Workers @ FSAI Agile Delivery Leader | Scrum Master | Artificial Intelligence | Transformation | Technology",
+      "bucket": "named_fsai",
+      "family": "Delivery / product / BA",
+      "seniority": "Lead / manager",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Slogan title, no stack"
+    },
+    {
+      "name": "Alicia Chen",
+      "headline": "Building AI Co-Workers at Future Secure AI | Product, Transformation, Strategy, AI, Technology, Data",
+      "bucket": "named_fsai",
+      "family": "AI / ML / data",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Slogan title, no stack"
+    },
+    {
+      "name": "Joshua Jansen",
+      "headline": "Building AI Workers @ FSAI",
+      "bucket": "named_fsai",
+      "family": "Unclassified / other",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Slogan title, no stack"
+    },
+    {
+      "name": "Raajesh V Sayyapureddi",
+      "headline": "AI Build Lead at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "AI / ML / data",
+      "seniority": "Lead / manager",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Tom W.",
+      "headline": "Agentic AI Transformation | Enterprise Deployment in Regulated Financial Environments | Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "AI / ML / data",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Benjamin Yong",
+      "headline": "Staff Software Engineer @ FSAI | Backend, Agentic AI & Product Engineering",
+      "bucket": "named_fsai",
+      "family": "AI / ML / data",
+      "seniority": "Staff / principal",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Arun Karoth",
+      "headline": "Solutions Architect at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Unclassified / other",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Nick Stanek",
+      "headline": "Technical Sourcer at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Talent / people",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Hiring / people"
+    },
+    {
+      "name": "Ya Gao",
+      "headline": "Staff Data Scientist at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "AI / ML / data",
+      "seniority": "Staff / principal",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Tyler Wilson",
+      "headline": "Director | Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Directors / executives",
+      "seniority": "Director / VP",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Alex W.",
+      "headline": "UX Lead | Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Design",
+      "seniority": "Lead / manager",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Esther Y.",
+      "headline": "AI Build Lead at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "AI / ML / data",
+      "seniority": "Lead / manager",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Ana Luiza Miranda Dantas",
+      "headline": "Tech Business Analyst | AI Business Analyst @ Future Secure AI | Bachelor of IT",
+      "bucket": "named_fsai",
+      "family": "Delivery / product / BA",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Delivery / BA / agile"
+    },
+    {
+      "name": "Steve Carlisle",
+      "headline": "Executive Director | Building AI Co-Workers I Business & Technology Transformation | GAICD",
+      "bucket": "leadership_page",
+      "family": "AI / ML / data",
+      "seniority": "Exec / head",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Slogan title, no stack"
+    },
+    {
+      "name": "Julian Sun Ou",
+      "headline": "Engagement Lead @ Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Delivery / product / BA",
+      "seniority": "Lead / manager",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Delivery / BA / agile"
+    },
+    {
+      "name": "Jackson Zhang",
+      "headline": "Future Secure AI | ex-Apple",
+      "bucket": "named_fsai",
+      "family": "Unclassified / other",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [
+        "Apple"
+      ],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Lorena De Canas",
+      "headline": "Senior AI QA Engineer at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Quality engineering",
+      "seniority": "Senior",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "QA / test"
+    },
+    {
+      "name": "Damien Kingsley",
+      "headline": "Platform Engineer @ FSAI | Bachelor\u2019s in IT, Ruby on Rails, Typescript",
+      "bucket": "named_fsai",
+      "family": "Platform / SRE / cloud",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Dr. Diana Antonosyan",
+      "headline": "AI Build Lead at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "AI / ML / data",
+      "seniority": "Lead / manager",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Alekha Pruthvi B.",
+      "headline": "QA Lead @ FutureSecureAI| Masters in IT",
+      "bucket": "named_fsai",
+      "family": "Quality engineering",
+      "seniority": "Lead / manager",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "QA / test"
+    },
+    {
+      "name": "Matthew Pulsipher",
+      "headline": "Senior Product Manager at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Delivery / product / BA",
+      "seniority": "Lead / manager",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Gaurav Madan",
+      "headline": "Sr. QA Engineer at Future Secure AI | API Automation | Postman/SoapUI | ETL Testing | Database Testing | Payments | NPP | MPS | Agile",
+      "bucket": "named_fsai",
+      "family": "Quality engineering",
+      "seniority": "Senior",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "QA / test"
+    },
+    {
+      "name": "Hanna Goldberg",
+      "headline": "AI Co-Workers @ FSAI",
+      "bucket": "named_fsai",
+      "family": "AI / ML / data",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Zakira Lyon",
+      "headline": "Building AI Co-Workers @ Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "AI / ML / data",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Slogan title, no stack"
+    },
+    {
+      "name": "Eder Campelo",
+      "headline": "Staff Engineer @ FSAI",
+      "bucket": "named_fsai",
+      "family": "Unclassified / other",
+      "seniority": "Staff / principal",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Andrew B.",
+      "headline": "Engineering Manager at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Software engineering",
+      "seniority": "Lead / manager",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Ariane Garside",
+      "headline": "Executive Director, Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Directors / executives",
+      "seniority": "Exec / head",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Mahsa H.",
+      "headline": "AI Software Engineer at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Software engineering",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Sirisha Madduri",
+      "headline": "Head of Technical Program Management @ FSAI,Ex-PayPal",
+      "bucket": "named_fsai",
+      "family": "Unclassified / other",
+      "seniority": "Exec / head",
+      "phd": false,
+      "priors": [
+        "PayPal"
+      ],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "James W.",
+      "headline": "Senior Platform Engineer @ FSAI / Hobbyist Gamedev",
+      "bucket": "named_fsai",
+      "family": "Platform / SRE / cloud",
+      "seniority": "Senior",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Goy Phumtim",
+      "headline": "Chief of Staff, Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "C-suite / founders",
+      "seniority": "C-suite",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Sam Gorinsky",
+      "headline": "Staff Engineer @ FutureSecure AI",
+      "bucket": "named_fsai",
+      "family": "Unclassified / other",
+      "seniority": "Staff / principal",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Hannah Voss",
+      "headline": "Recruitment @ Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Talent / people",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Hiring / people"
+    },
+    {
+      "name": "Cody Collins",
+      "headline": "Director at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Directors / executives",
+      "seniority": "Director / VP",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Naz Saleem",
+      "headline": "Designing and delivering companies that thrive with humans and AI working as one | Chief Transformation Officer | McKinsey Alum | Kellogg MBA",
+      "bucket": "leadership_page",
+      "family": "Design",
+      "seniority": "C-suite",
+      "phd": false,
+      "priors": [
+        "McKinsey"
+      ],
+      "location": "No location word",
+      "competency": "Consulting pedigree, no stack"
+    },
+    {
+      "name": "Paul Freeman",
+      "headline": "Staff AI Engineer (Software) at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "AI / ML / data",
+      "seniority": "Staff / principal",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Agatha Santos",
+      "headline": "QA Engineer | Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Quality engineering",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "QA / test"
+    },
+    {
+      "name": "Adarsh T Prakasan",
+      "headline": "Lead engineer at Future Secure Al | AI Enthusiast & Innovator | Agentic solutions | Langgraph | LLMOps",
+      "bucket": "named_fsai",
+      "family": "AI / ML / data",
+      "seniority": "Lead / manager",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Named tools / models"
+    },
+    {
+      "name": "Xupeng Shi",
+      "headline": "Senior Software Engineer @ FSAI | ECE @ CMU",
+      "bucket": "named_fsai",
+      "family": "Software engineering",
+      "seniority": "Senior",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Htoo Min",
+      "headline": "Senior AI Engineer at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "AI / ML / data",
+      "seniority": "Senior",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Allison Velzke",
+      "headline": "Sr Director @ Future Secure AI | Financial Services | Enterprise Transformation",
+      "bucket": "named_fsai",
+      "family": "Directors / executives",
+      "seniority": "Exec / head",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Erin Contreras",
+      "headline": "HR Ops Coordinator at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Talent / people",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Chris Halsall",
+      "headline": "Director at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Directors / executives",
+      "seniority": "Director / VP",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Kristin L.",
+      "headline": "Senior Program Manager at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Delivery / product / BA",
+      "seniority": "Lead / manager",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Edward H.",
+      "headline": "Staff AI Engineer at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "AI / ML / data",
+      "seniority": "Staff / principal",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Sarah Ryerson",
+      "headline": "Tech Executive & Board Director, ex-McKinsey, ex-Google, ex-Cohere",
+      "bucket": "leadership_page",
+      "family": "Directors / executives",
+      "seniority": "Director / VP",
+      "phd": false,
+      "priors": [
+        "McKinsey",
+        "Cohere",
+        "Google"
+      ],
+      "location": "No location word",
+      "competency": "Consulting pedigree, no stack"
+    },
+    {
+      "name": "Hoi Ching Tong",
+      "headline": "Director at Future Secure AI | Ex-Apple",
+      "bucket": "named_fsai",
+      "family": "Directors / executives",
+      "seniority": "Director / VP",
+      "phd": false,
+      "priors": [
+        "Apple"
+      ],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Vasco J S Lima",
+      "headline": "Engineering Agile Delivery Lead at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Delivery / product / BA",
+      "seniority": "Lead / manager",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Delivery / BA / agile"
+    },
+    {
+      "name": "Alexandrea Logan, LMSW",
+      "headline": "Director of Operations at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Directors / executives",
+      "seniority": "Director / VP",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "LinkedIn Member (name hidden)",
+      "headline": "Future Secure Wave RedTeam Pentester",
+      "bucket": "named_fsai",
+      "family": "Unclassified / other",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Chad Griffin",
+      "headline": "Engagement Director | Building Complex Agentic Systems | Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "AI / ML / data",
+      "seniority": "Director / VP",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Fabio Rodrigues da Silva",
+      "headline": "Platform Operations Manager - Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Operations",
+      "seniority": "Lead / manager",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "LinkedIn Member (name hidden)",
+      "headline": "Senior Quality Assurance Engineer at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Quality engineering",
+      "seniority": "Senior",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "QA / test"
+    },
+    {
+      "name": "Carlos Gabriel",
+      "headline": "Senior Software Engineer @ Future Secure AI | AI Systems | LLM Applications | TypeScript, Node.js, React",
+      "bucket": "named_fsai",
+      "family": "AI / ML / data",
+      "seniority": "Senior",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Named tools / models"
+    },
+    {
+      "name": "Dean DiCarlo II",
+      "headline": "Intern @ FSAI | Security+ Certified | AI Engineer",
+      "bucket": "named_fsai",
+      "family": "AI / ML / data",
+      "seniority": "Intern",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Marta Adomaitis",
+      "headline": "Staff AI Engineer at @FutureSecureAi | Node.js | TypeScript | MySQL | PostgreSQL | AWS | LangGraph | N8N | Flowise",
+      "bucket": "named_fsai",
+      "family": "AI / ML / data",
+      "seniority": "Staff / principal",
+      "phd": false,
+      "priors": [
+        "AWS"
+      ],
+      "location": "No location word",
+      "competency": "Named tools / models"
+    },
+    {
+      "name": "Emma Ascolese",
+      "headline": "Technical Business Analyst at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Delivery / product / BA",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Delivery / BA / agile"
+    },
+    {
+      "name": "LinkedIn Member (name hidden)",
+      "headline": "Engenheiro de software na Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Unclassified / other",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [],
+      "location": "Portuguese (LatAm) title",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "TJ Mead",
+      "headline": "Global Resilience, Risk & Technical Operations Executive | Netflix & AWS Alum | International Public Speaker",
+      "bucket": "leadership_page",
+      "family": "Directors / executives",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [
+        "Netflix",
+        "AWS"
+      ],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Dorian Lo",
+      "headline": "Senior Advisor, Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Unclassified / other",
+      "seniority": "Senior",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "LinkedIn Member (name hidden)",
+      "headline": "Head of HR Technology and Operations at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Operations",
+      "seniority": "Exec / head",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "LinkedIn Member (name hidden)",
+      "headline": "Senior Software Engineer at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Software engineering",
+      "seniority": "Senior",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Lazzat Bayterek",
+      "headline": "Lead Scrum Master at FSAI",
+      "bucket": "named_fsai",
+      "family": "Delivery / product / BA",
+      "seniority": "Lead / manager",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Delivery / BA / agile"
+    },
+    {
+      "name": "Karima Jarylgapova",
+      "headline": "Senior Quality Assurance Engineer at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Quality engineering",
+      "seniority": "Senior",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "QA / test"
+    },
+    {
+      "name": "Mike Karim",
+      "headline": "COO/CFO | Strategic Operating Partner | Business Operations Focused | Public Company Readiness | Advisor",
+      "bucket": "leadership_page",
+      "family": "Legal / risk / finance",
+      "seniority": "C-suite",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Frank Chen",
+      "headline": "AI Engineer @ FSAI",
+      "bucket": "named_fsai",
+      "family": "AI / ML / data",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Mark Tov",
+      "headline": "Senior AI Engineer @ Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "AI / ML / data",
+      "seniority": "Senior",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Pruthviraj K Suresh",
+      "headline": "Senior Data Architect at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Unclassified / other",
+      "seniority": "Senior",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "James P Collier",
+      "headline": "Learning & Enablement Lead at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Operations",
+      "seniority": "Lead / manager",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Akhil D.",
+      "headline": "Senior DevOps Engineer @ FSAI",
+      "bucket": "named_fsai",
+      "family": "Platform / SRE / cloud",
+      "seniority": "Senior",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Lew-Christiane Fernandez",
+      "headline": "Senior Manager DevOps Engineering at Future Secure AI. Exited twice.",
+      "bucket": "named_fsai",
+      "family": "Platform / SRE / cloud",
+      "seniority": "Lead / manager",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Shaun H.",
+      "headline": "CTO & AI Platform Leader | Enterprise GenAI, LLMs, Agentic Platforms | ex-Cohere, AWS",
+      "bucket": "leadership_page",
+      "family": "AI / ML / data",
+      "seniority": "C-suite",
+      "phd": false,
+      "priors": [
+        "Cohere",
+        "AWS"
+      ],
+      "location": "No location word",
+      "competency": "Named tools / models"
+    },
+    {
+      "name": "Andrew Trahair",
+      "headline": "Chief Corporate Officer @ Future Secure AI | Former A&O Shearman senior partner",
+      "bucket": "named_fsai",
+      "family": "C-suite / founders",
+      "seniority": "C-suite",
+      "phd": false,
+      "priors": [
+        "A&O Shearman"
+      ],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Rubez Chong",
+      "headline": "Building AI Co-Workers @ Future Secure AI | McKinsey Alum | MIT Media Lab",
+      "bucket": "named_fsai",
+      "family": "AI / ML / data",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [
+        "McKinsey"
+      ],
+      "location": "No location word",
+      "competency": "Slogan title, no stack"
+    },
+    {
+      "name": "Matheus Leal",
+      "headline": "Senior Software Engineer @ Future Secure AI | AI Voice Platforms | Distributed Systems",
+      "bucket": "named_fsai",
+      "family": "Software engineering",
+      "seniority": "Senior",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Jim Lambright",
+      "headline": "-",
+      "bucket": "leadership_page",
+      "family": "Unclassified / other",
+      "seniority": "Individual contributor",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    },
+    {
+      "name": "Ali Rod Khadem",
+      "headline": "General Counsel & Law Professor | Former SVP Macquarie Capital (Asia/Middle East) | Linklaters \u00b7 DLA Piper | Harvard PhD | UC Berkeley JD",
+      "bucket": "leadership_page",
+      "family": "Legal / risk / finance",
+      "seniority": "Individual contributor",
+      "phd": true,
+      "priors": [
+        "Macquarie"
+      ],
+      "location": "Other region word",
+      "competency": "Buyer-bank pedigree"
+    },
+    {
+      "name": "Chris Childers",
+      "headline": "Senior Legal Counsel, Commercial at Future Secure AI",
+      "bucket": "named_fsai",
+      "family": "Legal / risk / finance",
+      "seniority": "Senior",
+      "phd": false,
+      "priors": [],
+      "location": "No location word",
+      "competency": "Generic / unspecified"
+    }
+  ]
+}

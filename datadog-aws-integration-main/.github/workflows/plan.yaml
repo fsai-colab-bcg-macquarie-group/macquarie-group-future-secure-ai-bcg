@@ -1,0 +1,29 @@
+# This is a basic workflow to help you get started with Actions
+name: Terraform Plan
+
+# Controls when the action will run. Invokes the workflow on push events but only for the main branch
+on:
+  pull_request:
+    branches: [ main ]
+
+# Permission can be added at job level or workflow level    
+permissions:
+  id-token: write   # This is required for requesting the JWT
+  contents: read    # This is required for actions/checkout
+ 
+jobs:
+  dev-plan:
+    uses: Future-Secure-AI/cicd-templates/.github/workflows/terraform-plan.yaml@main
+    with:
+      AWS_ACCOUNT: "682033481043"
+      ENVIRONMENT: "dev"
+  sit-plan:
+    uses: Future-Secure-AI/cicd-templates/.github/workflows/terraform-plan.yaml@main
+    with:
+      AWS_ACCOUNT: "050752608492"
+      ENVIRONMENT: "sit"
+  prod-plan:
+    uses: Future-Secure-AI/cicd-templates/.github/workflows/terraform-plan.yaml@main
+    with:
+      AWS_ACCOUNT: "340752804518"
+      ENVIRONMENT: "prod"

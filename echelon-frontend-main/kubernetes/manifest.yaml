@@ -1,0 +1,120 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: platform
+---
+apiVersion: external-secrets.io/v1beta1
+kind: ExternalSecret
+metadata:
+  name: echelon-frontend-secrets
+  namespace: platform
+spec:
+  refreshInterval: "15m"
+  secretStoreRef:
+    name: aws-secrets-manager
+    kind: ClusterSecretStore
+  target:
+    name: echelon-frontend-secrets
+    template:
+      data:
+        .env: |-
+          {{- $first := true -}}
+          {{- range $key, $value := . -}}
+          {{- if $first -}}
+          {{- $first = false -}}
+          {{- else -}}
+          {{ "\n" -}}
+          {{- end -}}
+          {{ $key }}={{ $value | toString -}}
+          {{- end }}
+      engineVersion: v2
+      mergePolicy: Replace
+      type: Opaque
+  dataFrom:
+    - extract:
+        key: echelon-frontend-secrets
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: echelon-frontend-deployment
+  namespace: platform
+  annotations:
+    secret.reloader.stakater.com/reload: "echelon-frontend-secrets"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: echelon-frontend
+  template:
+    metadata:
+      labels:
+        app: echelon-frontend
+    spec:
+      containers:
+        - name: echelon-frontend-container
+          image: REPLACE_IMAGE_URI
+          imagePullPolicy: Always
+          ports:
+            - name: http
+              containerPort: 3000
+              protocol: TCP
+          envFrom:
+            - secretRef:
+                name: echelon-frontend-secrets
+          resources:
+            limits:
+              memory: '512Mi'
+              cpu: '500m'
+            requests:
+              memory: '256Mi'
+              cpu: '250m'
+          volumeMounts:
+            - name: secret-volume
+              mountPath: /etc/secrets
+              readOnly: true
+      volumes:
+        - name: secret-volume
+          secret:
+            secretName: frontend-temp-secret
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: echelon-frontend
+  namespace: platform
+spec:
+  selector:
+    app: echelon-frontend
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000
+  type: ClusterIP
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: echelon-frontend-ingress
+  namespace: platform
+  annotations:
+    cert-manager.io/cluster-issuer: clusterissuer-prod
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - echelon.REPLACE_WITH_ENV.fsailabs.com
+      secretName: echelon-tls-secret
+  rules:
+    - host: echelon.REPLACE_WITH_ENV.fsailabs.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: echelon-frontend
+                port:
+                  number: 80

@@ -1,0 +1,9 @@
+[submodule "echelon-frontend"]
+	path = echelon-frontend
+	url = git@github.com:Future-Secure-AI/echelon-frontend.git
+[submodule "head-agent-flow-api"]
+	path = head-agent-flow-api
+	url = git@github.com:Future-Secure-AI/head-agent-flow-api.git
+[submodule "echelon-api"]
+	path = echelon-api
+	url = git@github.com:Future-Secure-AI/echelon-api.git

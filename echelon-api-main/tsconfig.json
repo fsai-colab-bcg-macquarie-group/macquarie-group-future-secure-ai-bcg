@@ -1,0 +1,45 @@
+{
+    "extends": "@tsconfig/recommended",
+    "compilerOptions": {
+        "target": "ES2023",
+        "module": "CommonJS",
+        "sourceMap": true,
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": "./",
+        "outDir": "./dist",
+        "declaration": true,
+        "removeComments": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUnusedParameters": true,
+        "useDefineForClassFields": true,
+        "strictPropertyInitialization": false,
+        "incremental": true,
+        "strictNullChecks": true,
+        "noImplicitAny": true,
+        "strictBindCallApply": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "skipLibCheck": true,
+        "paths": {
+            "@nestjs/*": [
+                "node_modules/@nestjs/*"
+            ]
+        },
+        "typeRoots": ["node_modules/@types", "src/types"]
+    },
+    "watchOptions": {
+        "watchFile": "fixedPollingInterval"
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist",
+        "test"
+    ]
+}

@@ -1,0 +1,65 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: platform
+---
+apiVersion: external-secrets.io/v1beta1
+kind: ExternalSecret
+metadata:
+  name: echelon-api-secrets
+  namespace: platform
+spec:
+  refreshInterval: "15m"
+  secretStoreRef:
+    name: aws-secrets-manager
+    kind: ClusterSecretStore
+  target:
+    name: echelon-api-secrets
+    creationPolicy: Owner
+  dataFrom:
+    - extract:
+        key: echelon-api-secrets
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: echelon-api-deployment
+  namespace: platform
+  annotations:
+    secret.reloader.stakater.com/reload: "echelon-api-secrets"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: echelon-api
+  template:
+    metadata:
+      labels:
+        app: echelon-api
+    spec:
+      containers:
+        - name: echelon-api-container
+          image: REPLACE_IMAGE_URI
+          imagePullPolicy: Always
+          ports:
+            - name: http
+              containerPort: 3010
+              protocol: TCP
+          envFrom:
+            - secretRef:
+                name: echelon-api-secrets
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: echelon-api
+  namespace: platform
+spec:
+  selector:
+    app: echelon-api
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3010
+  type: ClusterIP

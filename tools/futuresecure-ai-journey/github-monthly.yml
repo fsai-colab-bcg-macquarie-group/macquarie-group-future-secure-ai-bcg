@@ -1,0 +1,29 @@
+name: futuresecure-ai monthly
+
+# Copy to .github/workflows/futuresecure-ai-monthly.yml to enable Actions.
+# Author/committer is nobody. Do not set github.actor. Do not use a personal token.
+
+on:
+  schedule:
+    - cron: "0 5 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  journey:
+    runs-on: ubuntu-latest
+    env:
+      GIT_AUTHOR_NAME: nobody
+      GIT_AUTHOR_EMAIL: noreply@localhost
+      GIT_COMMITTER_NAME: nobody
+      GIT_COMMITTER_EMAIL: noreply@localhost
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Record monthly journey
+        run: python3 tools/futuresecure-ai-journey/track.py
+      - name: Commit journey
+        run: bash tools/futuresecure-ai-journey/commit-as-nobody.sh --push

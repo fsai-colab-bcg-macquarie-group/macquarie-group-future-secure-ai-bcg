@@ -1,0 +1,7 @@
+infra/*/data
+infra/supabase-volumes/storage
+.env
+test.http
+docker-compose.override.yml
+.vscode
+infra/k8s/*secrets.yaml

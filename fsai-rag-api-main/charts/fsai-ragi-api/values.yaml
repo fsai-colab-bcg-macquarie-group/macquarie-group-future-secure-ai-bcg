@@ -1,0 +1,63 @@
+replicaCount: 1
+
+image:
+  #repository: ${AWS_ACCOUNT}.dkr.ecr.${AWS_REGION}.amazonaws.com/fsai-ragi-api
+  pullPolicy: IfNotPresent
+  #tag: ""  # Will be overridden by CI/CD pipeline
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  create: false
+  annotations: {}
+  name: ""
+
+podAnnotations: {}
+
+podSecurityContext: {}
+
+securityContext: {}
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 8000
+
+ingress:
+  enabled: true
+  className: "nginx"
+  annotations: 
+    cert-manager.io/cluster-issuer: clusterissuer-prod
+  hosts:
+    - host: fsai-rag-api.REPLACE_WITH_ENV.fsailabs.com
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
+  tls:
+  - hosts:
+    - fsai-rag-api.REPLACE_WITH_ENV.fsailabs.com
+    secretName: fsai-rag-api-tls-secret
+
+resources:
+  limits:
+    cpu: 1
+    memory: 1Gi
+  requests:
+    cpu: 500m
+    memory: 512Mi
+
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 3
+  targetCPUUtilizationPercentage: 80
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
+
+env: [] 

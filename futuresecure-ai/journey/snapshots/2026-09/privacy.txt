@@ -1,0 +1,169 @@
+Future Secure AI Privacy Policy
+Welcome to Future Secure AI! At Future Secure AI, we are committed to protecting your privacy and adhering to the principles of the General Data Protection Regulation (GDPR) and the Australian Privacy Principles (APPs) under the Privacy Act 1988 (Cth). This Privacy Policy outlines how we collect, use, share, and protect your personal data when you visit our website at www.futuresecure.ai (the "Website") and use our services. By accessing or using our Website and services, you consent to the practices described in this Privacy Policy.
+Information We Collect
+We collect various types of personal data to provide and improve our services, communicate with you, and enhance your user experience. The types of personal data we may collect include:
+Identity Data: Information that can be used to identify you, such as your name and email address.
+Usage Data: Information about how you use our Website, including your IP address, browser type, and operating system.
+Cookies and Tracking Technologies: We may use cookies and similar technologies to collect information about your interactions with our Website. By using our Website, you consent to the use of cookies. You can manage your cookie preferences through your browser settings or via our cookie consent tool available on the site.
+Third-Party Data: We may receive information from third-party sources, such as social media platforms, when you interact with our content.
+Lawful Basis for Processing
+We process your personal data under the following lawful bases:
+Contractual Necessity: To perform the service you have signed up for.
+Legitimate Interests: Pursuant to our legitimate interests, provided they do not override your interests or fundamental rights and freedoms.
+Consent: With your explicit consent.
+Legal Obligations: To comply with legal obligations.
+How We Use Your Personal Data
+We use your personal data for various purposes, including:
+Providing and improving our services.
+Communicating with you, including responding to your inquiries.
+Personalizing your experience on our Website.
+Analyzing usage patterns and trends.
+Marketing and promoting our products and services.
+Complying with legal obligations.
+How We Share Your Personal Data
+We may share your personal data with third parties in the following circumstances:
+With your consent.
+To our service providers who help us with various aspects of our business.
+To comply with legal obligations.
+In connection with a business transfer or merger.
+To protect our rights, privacy, safety, or property, or that of our users and others.
+Your Rights Under GDPR
+Under the GDPR, you have the following rights regarding your personal data:
+The right to access your personal data.
+The right to rectify inaccurate personal data.
+The right to erasure (the "right to be forgotten").
+The right to restrict processing.
+The right to data portability.
+The right to object to processing.
+The right not to be subject to automated decision-making, including profiling.
+Security
+We take data security seriously and have implemented robust measures to safeguard your personal data. We are committed to protecting your personal data from unauthorized access, disclosure, alteration, or destruction. In the event of a data breach that compromises your personal data, we will promptly notify you and relevant authorities, as required by law. Here are some of the security measures we have in place:
+Encryption: We use industry-standard encryption protocols to secure the transmission of data between your device and our servers. This includes the use of Secure Sockets Layer (SSL) technology to encrypt data during transmission.
+Access Control: Access to your personal data is restricted to authorized personnel only. We employ strict access controls and user authentication mechanisms to ensure that only those with a legitimate need can access and process your data.
+Regular Security Audits: We conduct regular security audits and assessments of our systems to identify and address vulnerabilities. This includes penetration testing and vulnerability scanning.
+Data Minimization: We collect and retain only the data necessary to provide our services. We do not store personal data longer than required for the purposes specified in this Privacy Policy.
+Employee Training: Our employees are trained on data protection and security best practices. They are aware of the importance of maintaining the confidentiality and integrity of your personal data.
+Incident Response Plan: We have an incident response plan in place to promptly address and mitigate any security incidents or data breaches. In the event of a breach, we will comply with our legal obligations to notify you and the relevant authorities.
+While we take these measures to protect your data, it's important to understand that no method of transmission or storage is entirely secure. Therefore, we cannot guarantee the absolute security of your personal data. We encourage you to also take precautions to protect your data, such as choosing strong, unique passwords and keeping them confidential. If you become aware of any security issues or have concerns about the security of your personal data, please contact us immediately using the contact information provided in Section 9 below.
+Children's Privacy
+Our services are not intended for children under 16 years of age, and we do not knowingly collect personal data from children. If we discover that we have collected personal data from a child under 16, we will take steps to delete that data.
+Changes to This Privacy Policy
+We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. We will post the updated Privacy Policy on our Website and revise the "Last Updated" date accordingly.
+Contact Us
+If you have any questions, concerns, or requests regarding this Privacy Policy or your GDPR rights, please contact us at: Email: privacy@futuresecure.ai
+Home
+Ai Co-Workers
+The Red-Zone
+Sectors
+Technology
+Customers
+Leadership
+Careers
+About
+About A
+Corporate version for partners and clients who want scale, data, and global trust.
+About B
+Narrative version for those seeking the brand’s story, values, and human side.
+About C
+System version for business clients focused on structure, results, and operations.
+Clients
+No items found.
+Evermind
+No items found.
+Halden Miller
+No items found.
+Foster & Reeves
+No items found.
+Nothing
+Show All
+No items found.
+No items found.
+No items found.
+No items found.
+Newsroom
+Newsroom A
+Corporate version for partners and clients who want scale, data, and global trust.
+Newsroom B
+Narrative version for those seeking the brand’s story, values, and human side.
+Newsroom C
+System version for business clients focused on structure, results, and operations.
+Contact
+Contact A
+Corporate version for partners and clients who want scale, data, and global trust.
+Contact B
+Narrative version for those seeking the brand’s story, values, and human side.
+Contact C
+System version for business clients focused on structure, results, and operations.
+Home
+Eliminate clutter and focus on impactful content.
+Newsroom A
+·
+Newsroom B
+·
+Newsroom C
+Position yourself as a thought leader and boost SEO.
+About A
+·
+About B
+·
+About C
+How we think, work, and approach design.
+Clients
+Showcase your projects just the way you like.
+Client Single
+A personalized display of your project.
+Contact A
+·
+Contact B
+·
+Contact C
+Just say hi. We’re always curious to hear what you’re building.
+en
+Work with us
+lET'S TALK
+lET'S TALK
+Home
+AI Co-Workers
+The Red Zone
+Sectors
+Technology
+Customers
+Leadership
+Careers
+Let's talk.
+Join us in revolutionizing the future of AI with innovative solutions tailored to your needs.
+Name
+Email
+MESSAGE
+Send message
+Thank you! Your submission has been received!
+Oops! Something went wrong while submitting the form.
+Home
+AI Co-Workers
+The Red-Zone
+Sectors
+Technology
+Customers
+Leadership
+Careers
+Privacy Policy
+Global reach,
+driven from eight hubs
+We connect regional teams into one global network
+Austin (HQ)
+New York
+Chicago
+toronto
+Sydney
+Melbourne
+Brisbane
+Auckland
+austin (HQ)
+new york
+Chicago
+toronto
+sydney
+melbourne
+brisbane
+auckland
+copyright © 2026 Future secure ai inc. all rights reserved

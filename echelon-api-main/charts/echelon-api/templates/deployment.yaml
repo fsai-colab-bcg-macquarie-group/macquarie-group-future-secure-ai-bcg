@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "echelon-api.fullname" . }}-deployment
+  annotations:
+    secret.reloader.stakater.com/reload: "{{ .Values.externalSecrets.name }}"
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ include "echelon-api.name" . }}
+  template:
+    metadata:
+      labels:
+        app: {{ include "echelon-api.name" . }}
+    spec:
+      containers:
+        - name: {{ include "echelon-api.name" . }}-container
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - name: http
+              containerPort: {{ .Values.service.targetPort }}
+              protocol: TCP
+          envFrom:
+            - secretRef:
+                name: {{ .Values.externalSecrets.name }}

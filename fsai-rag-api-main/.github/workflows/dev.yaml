@@ -1,0 +1,30 @@
+# This is a basic workflow to help you get started with Actions
+name: CI Deployment to DEV
+
+# Controls when the action will run. Invokes the workflow on push events but only for the main branch
+on:
+  push:
+    branches: [ main ]
+
+# Permission can be added at job level or workflow level    
+permissions:
+  id-token: write   # This is required for requesting the JWT
+  contents: read    # This is required for actions/checkout
+
+jobs:
+  fsai-ragi-api-build:
+    uses: Future-Secure-AI/cicd-templates/.github/workflows/docker-build.yaml@main
+    secrets: inherit
+    with:
+      AWS_ACCOUNT: "682033481043"
+      ENVIRONMENT: "dev"
+  helm-deploy:
+    needs: [fsai-ragi-api-build]
+    uses: Future-Secure-AI/cicd-templates/.github/workflows/helm-deploy.yaml@main
+    with:
+      AWS_ACCOUNT: "682033481043"
+      ENVIRONMENT: "dev"
+      HELM_CHART_PATH: "./charts/fsai-ragi-api"
+      NAMESPACE: "data"
+      HELM_RELEASE_NAME: "fsai-ragi-api"
+      USE_IMAGE_OVERRIDE: true

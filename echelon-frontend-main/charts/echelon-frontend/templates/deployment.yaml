@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: echelon-frontend-deployment
+  namespace: {{ .Values.namespace }}
+  annotations:
+    secret.reloader.stakater.com/reload: "{{ .Values.secret.name }}"
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: echelon-frontend
+  template:
+    metadata:
+      labels:
+        app: echelon-frontend
+    spec:
+      containers:
+        - name: echelon-frontend-container
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: Always
+          ports:
+            - name: http
+              containerPort: 3000
+              protocol: TCP
+          envFrom:
+            - configMapRef:
+                  name: {{ .Values.configMap.name }}
+            - secretRef:
+                name: {{ .Values.secret.name }} 
+          resources:
+            limits:
+              memory: "{{ .Values.resources.limits.memory }}"
+              cpu: "{{ .Values.resources.limits.cpu }}"
+            requests:
+              memory: "{{ .Values.resources.requests.memory }}"
+              cpu: "{{ .Values.resources.requests.cpu }}"

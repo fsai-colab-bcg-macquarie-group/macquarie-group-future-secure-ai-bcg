@@ -1,0 +1,52 @@
+namespace: platform
+environment: "REPLACE_WITH_ENV"
+
+# image:
+#   #repository: "REPLACE_IMAGE_URI"
+#   tag: "latest"
+
+replicaCount: 1
+
+resources:
+  limits:
+    memory: "512Mi"
+    cpu: "500m"
+  requests:
+    memory: "256Mi"
+    cpu: "250m"
+
+ingress:
+  enabled: true
+  host: "echelon.REPLACE_WITH_ENV.fsailabs.com"
+  tls:
+    secretName: "echelon-tls-secret"
+
+secret:
+  name: "echelon-frontend-secrets"
+
+externalSecret:
+  refreshInterval: "15m"
+
+configMap:
+  name: "echelon-frontend-config"
+  signInMethod: "both"
+  apiUrl: "http://echelon-api.{{ .Release.Namespace }}.svc.cluster.local"
+  supportEmail: "support@futuresecure.ai"
+  allowedDomains: "@futuresecure.ai,@example.com,@gmail.com"
+  useCaseTeamsMaxTags: "5"
+  enableAdSearch: "true"
+  flowSeeAllow: "clipboard-read; clipboard-write;"
+  flowGenAllow: "clipboard-read; clipboard-write; camera; microphone"
+  applications:
+    fsaiFlow: "https://platform.REPLACE_WITH_ENV.fsailabs.com"
+    flowGen: "https://ai-flow.REPLACE_WITH_ENV.fsailabs.com"
+    flowSee: "https://langfuse.REPLACE_WITH_ENV.fsailabs.com"
+    flowTell: "https://fsai-tell.REPLACE_WITH_ENV.fsailabs.com"
+
+secretStoreRef:
+  name: "aws-secrets-manager"
+  kind: "ClusterSecretStore"
+
+service:
+  port: 80
+  targetPort: 3000

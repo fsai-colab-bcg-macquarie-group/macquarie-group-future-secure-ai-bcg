@@ -1,0 +1,27 @@
+# Deployment configuration
+replicaCount: 1
+
+fullnameOverride: echelon-api
+
+image:
+  #repository: "REPLACE_IMAGE_URI"  # Automatically replaced by the pipeline
+  #tag: "latest"  # Automatically replaced by the pipeline
+  pullPolicy: Always
+
+# ExternalSecret configuration
+externalSecrets:
+  name: echelon-api-secrets
+  refreshInterval: "15m"
+  secretStoreRefName: aws-secrets-manager
+  secretStoreRefKind: ClusterSecretStore
+  target:
+    creationPolicy: Owner
+  dataFrom:
+    extract:
+      key: echelon-api-secrets
+
+# Service configuration
+service:
+  name: echelon-api
+  port: 80
+  targetPort: 3010

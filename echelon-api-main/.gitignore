@@ -1,0 +1,41 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-lock.yaml
+
+# Dependências do Node.js
+node_modules/
+
+coverage/
+
+# Arquivos de compilação do TypeScript
+dist/
+out/
+
+# Ambiente
+#.env
+
+# Cache
+.cache/
+*.cache
+.pnpm-store/
+
+# IDEs e editores
+.idea/
+.vscode/
+*.swp
+*.swo
+*.bak
+
+# Configurações específicas do sistema operacional
+.DS_Store
+Thumbs.db
+
+.env
+
+# Sonarqube
+sonar-project.properties
+.scannerwork/

@@ -1,0 +1,46 @@
+{
+  "watchOptions": {
+    "watchFile": "fixedPollingInterval"
+  },
+  "compilerOptions": {
+    "target": "ES5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "CommonJS",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": ["node"],
+    "typeRoots": ["./node_modules/@types", "./types"],
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"],
+      "@app/*": ["./app/*"],
+      "@interfaces/*": ["./app/(private)/interfaces/*"],
+      "@contexts/*": ["./app/(private)/contexts/*"],
+      "@components/*": ["./app/(private)/components/*"],
+      "@definitions/*": ["./app/(private)/definitions/*"],
+      "@assets/*": ["./app/(private)/assets/*"],
+      "@services/*": ["./app/(private)/services/*"],
+      "@enum/*": ["./app/(private)/enum/*"],
+      "@helpers/*": ["./app/(private)/helpers/*"],
+      "@utils/*": ["./app/(private)/utils/*"],
+      "@ui/*": ["./app/(private)/ui/*"],
+      "@public/*": ["./app/(public-pages)/*"]
+    },
+    "moduleResolution": "node"
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,5 @@
+# Public figures site
+User-agent: *
+Allow: /
+
+Sitemap: https://fsai-colab-bcg-macquarie-group.github.io/macquarie-group-future-secure-ai-bcg/sitemap.xml

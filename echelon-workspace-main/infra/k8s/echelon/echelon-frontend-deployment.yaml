@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: echelon-frontend
+  namespace: echelon
+  labels:
+    app: echelon-frontend
+    project: echelon
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: echelon-frontend
+  template:
+    metadata:
+      labels:
+        app: echelon-frontend
+    spec:
+      containers:
+        - name: echelon-frontend
+          image: echelon-frontend
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 3000
+          env:
+            - name: NEXT_PUBLIC_ENV_API
+              value: "http://echelon-api-svc:3333"
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 3000
+            initialDelaySeconds: 10
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /ready
+              port: 3000
+            initialDelaySeconds: 5
+            periodSeconds: 5
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"

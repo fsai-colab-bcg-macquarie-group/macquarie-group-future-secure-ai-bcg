@@ -1,0 +1,39 @@
+services:
+  redis:
+    image: docker.io/library/redis:7-alpine
+    restart: always
+    volumes:
+      - redis-data:/data
+
+  worker:
+    build: .
+    command: >
+      poetry run celery -A api.worker:celery_app worker --loglevel=INFO
+    depends_on:
+      - redis
+    env_file: .env
+    environment:
+      REDIS_URL: redis://redis:6379/0
+      CAPSOLVER_API_KEY: ${CAPSOLVER_API_KEY}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      CAPEDGE_EMAIL:   ${CAPEDGE_EMAIL}
+      CAPEDGE_PASSWORD: ${CAPEDGE_PASSWORD}
+    restart: always
+
+  api:
+    build: .
+    depends_on:
+      - redis
+    env_file: .env
+    environment:
+      REDIS_URL: redis://redis:6379/0
+      CAPSOLVER_API_KEY: ${CAPSOLVER_API_KEY}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      CAPEDGE_EMAIL:   ${CAPEDGE_EMAIL}
+      CAPEDGE_PASSWORD: ${CAPEDGE_PASSWORD}
+    ports:
+      - "8000:8000"
+    restart: always
+
+volumes:
+  redis-data:

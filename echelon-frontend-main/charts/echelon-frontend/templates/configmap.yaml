@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.configMap.name }}
+  namespace: {{ .Values.namespace }}
+data:
+  SIGN_IN_METHOD: "{{ .Values.configMap.signInMethod }}"
+  ENVIRONMENT: "{{ .Values.environment }}"
+  NEXT_PUBLIC_SUPPORT_EMAIL: "{{ .Values.configMap.supportEmail }}"
+  ALLOWED_DOMAINS: "{{ .Values.configMap.allowedDomains }}"
+  USE_CASE_TEAMS_MAX_TAGS: "{{ .Values.configMap.useCaseTeamsMaxTags }}"
+  ENABLE_AD_SEARCH: "{{ .Values.configMap.enableAdSearch }}"
+  NODE_ENV: "{{ .Values.environment }}"
+  NEXT_PUBLIC_API_URL: "{{ .Values.configMap.apiUrl }}"
+  NEXT_PUBLIC_FSAI_FLOW_URL: "{{ .Values.configMap.applications.fsaiFlow }}"
+  NEXT_PUBLIC_FLOW_GEN_URL: "{{ .Values.configMap.applications.flowGen }}"
+  NEXT_PUBLIC_FLOW_SEE_URL: "{{ .Values.configMap.applications.flowSee }}"
+  NEXT_PUBLIC_IFRAME_FLOW_SEE_ALLOW: "{{ .Values.configMap.flowSeeAllow }}"
+  NEXT_PUBLIC_IFRAME_FLOW_GEN_ALLOW: "{{ .Values.configMap.flowGenAllow }}"
+  NEXT_PUBLIC_IFRAME_FLOW_TELL_URL: "{{ .Values.configMap.applications.flowTell }}"

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- public figures briefing -->
+  <title>Future Secure AI — public figures</title>
+  <meta name="description" content="One briefing of public figures: who has signed, what the seats were hired from, and what the titles actually say. Source repository on GitHub." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://fsai-colab-bcg-macquarie-group.github.io/macquarie-group-future-secure-ai-bcg/" />
+  <link rel="sitemap" type="application/xml" href="sitemap.xml" />
+  <link rel="stylesheet" href="css/site.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "name": "Future Secure AI — public figures",
+        "url": "https://fsai-colab-bcg-macquarie-group.github.io/macquarie-group-future-secure-ai-bcg/",
+        "isBasedOn": "https://github.com/fsai-colab-bcg-macquarie-group/macquarie-group-future-secure-ai-bcg"
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "macquarie-group-future-secure-ai-bcg",
+        "description": "Public GitHub archive of Future Secure AI (FSAI) platform code and the Macquarie Group / BCG public-figures briefing.",
+        "codeRepository": "https://github.com/fsai-colab-bcg-macquarie-group/macquarie-group-future-secure-ai-bcg",
+        "url": "https://github.com/fsai-colab-bcg-macquarie-group/macquarie-group-future-secure-ai-bcg",
+        "programmingLanguage": ["TypeScript", "Python", "HCL"]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="nav">
+    <a class="logo" href="index.html">FSAI public figures</a>
+    <input type="checkbox" id="nav-toggle" hidden />
+    <label class="burger" for="nav-toggle" aria-label="Open menu"><i></i></label>
+    <nav>
+      <a href="#proof">Proof</a>
+      <a href="#bench">Bench</a>
+      <a href="#place">Place</a>
+      <a href="#claims">Claims</a>
+      <a href="#list">List</a>
+      <a href="#sources">Sources</a>
+      <a href="https://github.com/fsai-colab-bcg-macquarie-group/macquarie-group-future-secure-ai-bcg">GitHub repo</a>
+    </nav>
+  </header>
+
+  <main class="wrap" id="main">
+    <h1>What the public record can support — and what it cannot</h1>
+    <p class="intro">The firm sells operated “AI Co-Workers” into regulated workflows. The published bench is a consulting-and-buyer-bank overlay with one Cohere-shaped CTO seat. Independent proof of a second paying customer, of 10x cost cuts, of a software-engineering leadership line, and of where the 282 people sit, is not in the record below.</p>
+    <p id="charts-error" class="note" hidden></p>
+
+    <h2 id="proof">Who has actually signed the work</h2>
+    <div class="statrow">
+      <div class="stat"><b>1</b><span>Independently reported trial (Macquarie, AFR) — also the named investor</span></div>
+      <div class="stat"><b>5</b><span>Named logos on the marketing site</span></div>
+      <div class="stat"><b>12</b><span>Sectors the site says it covers</span></div>
+      <div class="stat"><b>0</b><span>Audited dollar outcomes on this page</span></div>
+    </div>
+    <div class="chart-grid">
+      <article class="chart-card">
+        <h3>Proof vs map</h3>
+        <p class="hint">One trial, five logos, twelve sector tiles, three anonymised dollar stories. The map is larger than the named work.</p>
+        <canvas id="chart-proof"></canvas>
+      </article>
+      <article class="chart-card">
+        <h3>Title layer among 129 named headlines</h3>
+        <p class="hint">C-suite, EVP, and director titles are a quarter of the named sample — before counting “lead” and “staff.”</p>
+        <canvas id="chart-mgmt"></canvas>
+      </article>
+    </div>
+    <p class="note">AFR, Sep 2025: Macquarie backs the start-up and trials avatar workers in finance and HR. Economics not disclosed. Job ads still say the product was jointly developed with a global financial institution. That is the same house on both sides of the table. Two of the five site quotes are from people labelled <em>former</em> — still on the page.</p>
+    <table>
+      <thead><tr><th>Name</th><th>Speaker</th><th>Outside the brochure?</th></tr></thead>
+      <tbody>
+        <tr><td>Macquarie</td><td>Kwesi Nicholas, former</td><td>Yes — investor + trial (AFR). Same house.</td></tr>
+        <tr><td>Healius</td><td>Paul Anderson, CEO</td><td>Site quote only here</td></tr>
+        <tr><td>Orrick</td><td>Nigel Tranter, former CDO</td><td>Site quote only here</td></tr>
+        <tr><td>FIS</td><td>Kelly Beatty</td><td>Site quote only here</td></tr>
+        <tr><td>TOGA</td><td>Alex Collinson, CFO</td><td>Site quote only here</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="bench">What the published seats were hired from — vs what the titles do</h2>
+    <p class="intro">The leadership page is a prior-employer wall. McKinsey, Macquarie, BCG, and Deloitte fill founder, president, delivery, PE, and APAC seats. The Cohere mention sits on the CTO line. That mix sells trust to a bank committee. It does not, by itself, staff month-end close on a new agent runtime. Zero software-engineer seats on that page. Two seats labelled AI/ML. Seventeen director/exec lines.</p>
+    <div class="chart-grid">
+      <article class="chart-card wide tall">
+        <h3>Leadership page: prior firm × current seat</h3>
+        <p class="hint">Each person counted once, from the public bios. “Other” = Worley, TARP, startups, or unstated. Directors/executives are the thick band. Software engineering is empty.</p>
+        <canvas id="chart-lead-prior"></canvas>
+      </article>
+      <article class="chart-card">
+        <h3>Leadership page: prior-firm mix</h3>
+        <p class="hint">Consulting plus the buyer-bank is 20 of 37 named seats. Product-lab firms (Cohere, Netflix, AWS) are four.</p>
+        <canvas id="chart-lead-mix"></canvas>
+      </article>
+      <article class="chart-card">
+        <h3>Skill signal among C-suite / exec / director headlines</h3>
+        <p class="hint">Most of the management band does not name a tool, model, or runtime. Pedigree stands in for stack.</p>
+        <canvas id="chart-comp-mgmt"></canvas>
+      </article>
+      <article class="chart-card wide">
+        <h3>Named headlines: current function mix</h3>
+        <p class="hint">Forty titles sit in AI/ML/data. Seven sit in software engineering. Quality engineering (8) is larger than software engineering. Delivery/BA (13) is larger than platform (4).</p>
+        <canvas id="chart-function"></canvas>
+      </article>
+      <article class="chart-card wide tall">
+        <h3>Current function × skill signal in the headline</h3>
+        <p class="hint">The AI/ML band is mostly generic wording. Slogan-only (“building AI Co-Workers”) outnumbers titles that name a tool. The seats that would ship a runtime are the thin slice.</p>
+        <canvas id="chart-comp-fn"></canvas>
+      </article>
+      <article class="chart-card wide">
+        <h3>What the named titles concentrate on</h3>
+        <p class="hint">Read left (titles that ship) against right (titles that overlay). QA and slogan lines sit above software engineering.</p>
+        <canvas id="chart-capacity"></canvas>
+      </article>
+      <article class="chart-card wide tall">
+        <h3>Headlines that name a former employer × current function</h3>
+        <p class="hint">Most headlines name no former employer (those are omitted here). Where a firm is named, consulting and buyer-bank still sit on director/exec language. Stack language remains rare.</p>
+        <canvas id="chart-head-prior"></canvas>
+      </article>
+      <article class="chart-card wide">
+        <h3>Those same named priors × skill signal</h3>
+        <p class="hint">Ex-McKinsey / BCG / Deloitte / Macquarie in the headline cluster on generic or consulting-pedigree wording, not on named tools.</p>
+        <canvas id="chart-prior-comp"></canvas>
+      </article>
+    </div>
+    <p class="note">Homepage copy: “not SaaS, not SI, not consulting.” The ExCo that the site publishes is still a consulting-and-bank overlay. Business Wire (Mar 2026) names a President; the leadership page is a bio wall, not an operating org chart with span of control.</p>
+
+    <h2 id="place">Where the company says it is — vs words in titles</h2>
+    <div class="statrow">
+      <div class="stat"><b>5</b><span>Countries on the LinkedIn company snippet (AU, BR, US, CA, VN)</span></div>
+      <div class="stat"><b>8</b><span>Hubs on the website footer</span></div>
+      <div class="stat"><b>0</b><span>Named headlines containing “Vietnam”</span></div>
+      <div class="stat"><b>40 / 71 / 100 / 282 / 300+</b><span>Five public headcount figures that do not form one series</span></div>
+    </div>
+    <div class="chart-grid">
+      <article class="chart-card">
+        <h3>Location words in named headlines</h3>
+        <p class="hint">Almost none. APAC/NAM/Canada appear as title decorations. Brazil is visible mainly as Portuguese job language. Vietnam does not appear. A five-country widget with no split is not a staffing plan.</p>
+        <canvas id="chart-location"></canvas>
+      </article>
+      <article class="chart-card">
+        <h3>Countries claimed vs words in titles</h3>
+        <p class="hint">Widget presence (1) against headlines that actually mention the place. Canada and Vietnam are on the company page; they are not in the named titles.</p>
+        <canvas id="chart-geo"></canvas>
+      </article>
+      <article class="chart-card wide">
+        <h3>Headcount stories on the public record</h3>
+        <p class="hint">Hewlin: 40 → 300+ in 2025. LinkedIn widget: 282, +181.9% YoY, +211 people. 282 − 211 = 71. 282 ÷ 2.819 ≈ 100. Those are not the same series. A firm that cannot publish one headcount cannot be checked on utilisation either.</p>
+        <canvas id="chart-headcount"></canvas>
+      </article>
+      <article class="chart-card">
+        <h3>Hubs on the footer</h3>
+        <p class="hint">Austin HQ (2026 press). Brisbane and Auckland are on the footer, not in the April HQ press list. No public headcount per hub.</p>
+        <table>
+          <tbody>
+            <tr><td>Austin</td><td>HQ, press</td></tr>
+            <tr><td>New York, Chicago</td><td>US, press</td></tr>
+            <tr><td>Toronto</td><td>Canada</td></tr>
+            <tr><td>Sydney, Melbourne</td><td>Origin / AU</td></tr>
+            <tr><td>Brisbane, Auckland</td><td>Footer only</td></tr>
+          </tbody>
+        </table>
+      </article>
+      <article class="chart-card">
+        <h3>Seniority words in those headlines</h3>
+        <canvas id="chart-seniority"></canvas>
+      </article>
+    </div>
+
+    <h2 id="claims">Numbers attached to outcomes</h2>
+    <p class="intro">The product claim is 100+ agents, 10x operating cost, six-month payback, twelve sectors, eight hubs. The named sample that can be read in public is seven software-engineering titles, four platform titles, and six headlines that name a tool. Those two columns do not meet.</p>
+    <table>
+      <thead><tr><th>Statement</th><th>Where</th><th>What can be checked</th></tr></thead>
+      <tbody>
+        <tr><td>10x / 10x–20x operating cost</td><td>Job ads; HQ press</td><td class="flag">No filing, no audit</td></tr>
+        <tr><td>Payback in six months</td><td>Austin HQ press</td><td class="flag">Company claim</td></tr>
+        <tr><td>US$20–30M annual benefit</td><td>Anonymised FS case</td><td class="flag">Identity withheld</td></tr>
+        <tr><td>~10% PE hold-period uplift</td><td>Anonymised waste-asset story</td><td class="flag">Identity withheld</td></tr>
+        <tr><td>“Not SaaS, not SI, not consulting”</td><td>Homepage</td><td>Positioning. The ExCo is still a consulting-and-bank overlay.</td></tr>
+        <tr><td>A$200m / US$1bn+ IPO</td><td>Street Talk reprints</td><td class="flag">Rumour</td></tr>
+        <tr><td>100+ agents, 5–10 year run</td><td>Site / press</td><td class="flag">Company claim. Seven SWE titles in the named sample.</td></tr>
+        <tr><td>Live /404 title</td><td>Sep 2026 crawl</td><td>Still a Webflow template string</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Leadership page, one line each</h2>
+    <p class="note">Seat tags are inferred from the public bios, not from an org chart the firm publishes.</p>
+    <div style="overflow-x:auto">
+      <table>
+        <thead><tr><th>Name</th><th>Seat tag</th><th>Prior firm on the bio</th></tr></thead>
+        <tbody id="lead-body"></tbody>
+      </table>
+    </div>
+
+    <h2 id="list">Named directory</h2>
+    <p class="intro">Headlines that say Future Secure AI / FSAI, plus names that match the leadership page. Filter by prior firm, function, location word, or “slogan.”</p>
+    <input class="filter" id="q" type="search" placeholder="Filter (prior, function, slogan, location…)" />
+    <p class="note"><span id="dir-count"></span></p>
+    <div style="overflow-x:auto">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Headline</th>
+            <th>Function tag</th>
+            <th>Prior firm in headline</th>
+            <th>Location word</th>
+            <th>Skill signal</th>
+          </tr>
+        </thead>
+        <tbody id="dir-body"></tbody>
+      </table>
+    </div>
+
+    <h2 id="sources">Sources</h2>
+    <ul>
+      <li><a href="https://www.futuresecure.ai/">futuresecure.ai</a> (home, customers, leadership, sectors)</li>
+      <li><a href="https://www.afr.com/companies/financial-services/macquarie-backs-ai-start-up-placing-avatar-workers-in-finance-and-hr-20250908-p5mt5y">AFR, Sep 2025</a> — investor/trial</li>
+      <li><a href="https://www.businesswire.com/news/home/20260310797609/en/Future-Secure-AI-Appoints-Todd-Hewlin-as-President">Business Wire, Mar 2026</a> — President</li>
+      <li><a href="https://www.citybiz.co/article/839886/future-secure-ai-relocates-global-headquarters-to-austin-as-enterprise-demand-accelerates/">citybiz, Apr 2026</a> — Austin HQ + cost claims</li>
+      <li>LinkedIn company-page snippets (282, +182%, five countries). Live page login-walled.</li>
+      <li>People-search headlines (name + headline). No profile scrape. Other-employer cards dropped.</li>
+      <li><a href="https://github.com/fsai-colab-bcg-macquarie-group/macquarie-group-future-secure-ai-bcg">GitHub repository</a> — public source for this briefing and the FSAI platform archive</li>
+    </ul>
+  </main>
+  <footer class="site">Independent tally from public pages and press. Not a company publication. Source: <a href="https://github.com/fsai-colab-bcg-macquarie-group/macquarie-group-future-secure-ai-bcg">github.com/fsai-colab-bcg-macquarie-group/macquarie-group-future-secure-ai-bcg</a></footer>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="js/charts.js"></script>
+</body>
+</html>

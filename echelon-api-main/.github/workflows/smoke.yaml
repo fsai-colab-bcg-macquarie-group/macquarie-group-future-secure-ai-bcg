@@ -1,0 +1,39 @@
+# This is a basic workflow to help you get started with Actions
+name: Smoke Test
+
+# Controls when the action will run. Invokes the workflow on push events but only for the main branch
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["CI Deployment to PROD"]
+    types: [completed]
+
+
+# Permission can be added at job level or workflow level    
+permissions:
+  id-token: write   # This is required for requesting the JWT
+  contents: read    # This is required for actions/checkout
+  issues: write   # ⬅️ Adicionado para permitir o que o template precisa
+
+jobs:
+  regression-test-call:
+    uses: Future-Secure-AI/Automated_Tests_FSAI/.github/workflows/smoke.yml@smoke-test
+    secrets: inherit
+
+  SendMessageOnSuccess:
+    needs: regression-test-call
+    if: success()
+    uses: Future-Secure-AI/cicd-templates/.github/workflows/integration-roam.yaml@feature/coverage
+    secrets: inherit
+    with:
+      message: "✅Smoke Test in ${{ github.repository }}"
+      team: "TEAM_TEST"
+
+  SendMessageOnFailure:
+    needs: regression-test-call
+    if: failure()
+    uses: Future-Secure-AI/cicd-templates/.github/workflows/integration-roam.yaml@feature/coverage
+    secrets: inherit
+    with:
+      message: "❌Smoke Test in ${{ github.repository }}"
+      team: "TEAM_TEST"

@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: echelon-api-svc
+  namespace: echelon
+  labels:
+    app: echelon-api
+    project: echelon
+spec:
+  selector:
+    app: echelon-api
+  type: LoadBalancer
+  ports:
+    - protocol: TCP
+      port: 3333
+      targetPort: 3333

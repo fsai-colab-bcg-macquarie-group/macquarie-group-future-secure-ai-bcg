@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: echelon-frontend-svc
+  namespace: echelon
+  labels:
+    app: echelon-frontend
+    project: echelon
+spec:
+  selector:
+    app: echelon-frontend
+  type: LoadBalancer
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000

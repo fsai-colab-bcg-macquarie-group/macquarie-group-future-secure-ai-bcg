@@ -1,0 +1,28 @@
+name: Trigger Helm Deployment
+
+on:
+  push:
+    branches:
+      - dev
+      - sit
+      - main
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Disparar Pipeline do Helm Chart
+        env:
+          HELM_REPO: "Future-Secure-AI/fsai-helmchart-main-ci-cd"  # repo do HelmChartsMain
+          BOT_PAT: ${{ secrets.BOT_PAT }}
+        run: |
+          curl -X POST \
+            -H "Authorization: token ${BOT_PAT}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            "https://api.github.com/repos/${HELM_REPO}/dispatches" \
+            -d '{
+              "event_type": "deploy-trigger-fsai-os",
+              "client_payload": {
+                "repo": "Future-Secure-AI/echelon-frontend",
+                "branch": "${{ github.ref_name }}"
+              }
+            }'

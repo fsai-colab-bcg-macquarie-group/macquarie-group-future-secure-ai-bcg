@@ -1,0 +1,50 @@
+name: echelon
+services:
+  frontend:
+    image: node:${ECHELON_FRONTEND_NODE_VERSION}
+    working_dir: /usr/src/app
+    volumes:
+      - "${ECHELON_FRONTEND_WORKDIR}:/usr/src/app"
+    depends_on:
+      - api
+    networks:
+      - echelon_network
+    ports:
+      - "${ECHELON_FRONTEND_PORT}:${ECHELON_FRONTEND_PORT}"
+    command: sh -c "npm install -g pnpm && pnpm install && pnpm dev"
+    environment:
+      - NODE_ENV=${ECHELON_FRONTEND_ENV}
+      - PORT=${ECHELON_FRONTEND_PORT}
+      - NEXT_PUBLIC_ENV_API=${NEXT_PUBLIC_ENV_API}
+
+  api:
+    image: node:${ECHELON_API_NODE_VERSION}
+    working_dir: /usr/src/app
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - "${ECHELON_API_WORKDIR}:/usr/src/app"
+      - /usr/src/app/node_modules
+    ports:
+      - "${ECHELON_API_PORT}:${ECHELON_API_PORT}"
+    command: sh -c "npm install -g pnpm && pnpm install && pnpm start:dev"
+    networks:
+      - echelon_network
+      - supabase_default
+    environment:
+      - NODE_ENV=${ECHELON_API_ENV}
+      - PORT=${ECHELON_API_PORT}
+      - SUPABASE_URL=${ECHELON_API_SUPABASE_URL}
+      - SUPABASE_ANON_KEY=${ANON_KEY}
+      - SUPABASE_SERVICE_ROLE_KEY=${SERVICE_ROLE_KEY}
+      - JWT_SECRET=${JWT_SECRET}
+      - POSTGRES_URL=postgres://postgres:${POSTGRES_PASSWORD}@${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_DB}
+
+volumes:
+  frontend:
+  api:
+
+networks:
+  echelon_network:
+  supabase_default:
+    external: true

@@ -1,0 +1,73 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: echelon-api
+  namespace: echelon
+  labels:
+    app: echelon-api
+    project: echelon
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: echelon-api
+  template:
+    metadata:
+      labels:
+        app: echelon-api
+    spec:
+      containers:
+        - name: echelon-api
+          image: echelon-api
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 3333
+          env:
+            - name: SUPABASE_URL
+              valueFrom:
+                secretKeyRef:
+                  name: echelon-secrets
+                  key: SUPABASE_PUBLIC_URL
+            - name: SUPABASE_ANON_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: echelon-secrets
+                  key: ANON_KEY
+            - name: SUPABASE_SERVICE_ROLE_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: echelon-secrets
+                  key: SERVICE_ROLE_KEY
+            - name: POSTGRES_URL
+              valueFrom:
+                secretKeyRef:
+                  name: echelon-secrets
+                  key: POSTGRES_URL
+            - name: JWT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: echelon-secrets
+                  key: JWT_SECRET
+            - name: NODE_ENV
+              value: production
+            - name: PORT
+              value: "3333"
+          # livenessProbe:
+          #   httpGet:
+          #     path: /health
+          #     port: 3333
+          #   initialDelaySeconds: 10
+          #   periodSeconds: 10
+          # readinessProbe:
+          #   httpGet:
+          #     path: /ready
+          #     port: 3333
+          #   initialDelaySeconds: 5
+          #   periodSeconds: 5
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"

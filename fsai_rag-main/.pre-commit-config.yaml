@@ -1,0 +1,41 @@
+default_language_version:
+  python: python3
+
+ci:
+  autofix_prs: true
+  autoupdate_commit_msg: '[pre-commit.ci] pre-commit suggestions'
+  autoupdate_schedule: 'quarterly'
+
+
+repos:
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.13.2  # Use the latest version or the version of your choice
+    hooks:
+    - id: isort
+      args: ["--profile=black"]  # This sets isort to use the same profile as black
+      additional_dependencies:
+        - tomli
+
+  - repo: https://github.com/psf/black
+    rev: 24.3.0  # Use the latest version or the version of your choice
+    hooks:
+    - id: black
+      args: ["--line-length=88"]  # Ensure black uses the default line length; adjust if desired
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+    - id: check-added-large-files
+    - id: check-ast
+    - id: check-toml
+    - id: check-json
+    - id: check-merge-conflict
+    - id: detect-private-key
+    - id: trailing-whitespace
+    - id: end-of-file-fixer
+
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.9.0  # Specify the version of mypy you want to use
+    hooks:
+    - id: mypy
+      additional_dependencies: [types-requests, types-setuptools]  # Add any additional dependencies you might need
